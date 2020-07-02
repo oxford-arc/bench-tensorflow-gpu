@@ -32,14 +32,16 @@ The following are the results from an ARC 2 GPU system:
 
 ```
 ---------------------------------------------------------------------------
-1 GPU(s):FP16=True:Inception v3: total images/sec: 446.40
+1 GPU(s):FP16=True
+Inception v3: total images/sec: 446.40
 VGG16: total images/sec: 350.33
 ResNet50: total images/sec: 721.17
 ResNet152: total images/sec: 296.09
 
 ---------------------------------------------------------------------------
 ---------------------------------------------------------------------------
-2 GPU(s):FP16=True:Inception v3: total images/sec: 757.49
+2 GPU(s):FP16=True
+Inception v3: total images/sec: 757.49
 VGG16: total images/sec: 263.07
 ResNet50: total images/sec: 1163.36
 ResNet152: total images/sec: 440.74
@@ -49,14 +51,16 @@ ResNet152: total images/sec: 440.74
 ```
 ```
 ---------------------------------------------------------------------------
-1 GPU(s):FP16=False:Inception v3: total images/sec: 216.11
+1 GPU(s):FP16=False
+Inception v3: total images/sec: 216.11
 VGG16: total images/sec: 223.10
 ResNet50: total images/sec: 324.55
 ResNet152: total images/sec: 131.31
 
 ---------------------------------------------------------------------------
 ---------------------------------------------------------------------------
-2 GPU(s):FP16=False:Inception v3: total images/sec: 396.81
+2 GPU(s):FP16=False
+Inception v3: total images/sec: 396.81
 VGG16: total images/sec: 237.69
 ResNet50: total images/sec: 622.79
 ResNet152: total images/sec: 241.05

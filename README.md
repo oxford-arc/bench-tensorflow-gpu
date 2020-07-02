@@ -1,5 +1,5 @@
 # TensorFlow benchmark
-This benchmark uses the Tensorflow 19.12 application (TF 1.15) and the standard tf_cnn_benchmarks on a GPU system.
+This benchmark uses the Tensorflow 19.12 application (TF 1.15) and the standard ```tf_cnn_benchmarks``` set on a GPU system.
 
 ## Building the benchmark
 

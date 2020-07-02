@@ -20,6 +20,8 @@ sh build.sh
 
 - Run the benchmark code
 
+The file <runbench.sh> should be edited and the <GPUCOUNT> variable set to the number of available GPUs in the system. Two runs of the benchmark should be performed, one with the <FP16> variable in this file set to <True> and the second set to <False>. 
+
 ```
 sh runbench.sh
 ```

@@ -19,6 +19,7 @@ export TARGET=tensorflow-19.12-tf1-py3.sif
 #
 # ----------------- END ---------------------------
 
+mkdir image
 singularity pull image/$TARGET $DOCKERFILE
 
 rm -rf $SINGULARITY_CACHEDIR $SINGULARITY_TMPDIR

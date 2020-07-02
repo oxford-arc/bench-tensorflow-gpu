@@ -4,6 +4,8 @@
 # $SCRATCH is defined as ARC's scratch filesystem, this will need
 # to be defined for other systems.
 #
+export SCRATCH=/tmp
+
 export SINGULARITY_CACHEDIR=$(mktemp -d $SCRATCH/cache.XXXXX)
 export SINGULARITY_TMPDIR=$(mktemp -d $SCRATCH/target.XXXXX)
 

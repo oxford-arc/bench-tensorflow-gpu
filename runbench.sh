@@ -45,7 +45,7 @@ for gpu in `seq 1 ${GPUCOUNT}`;
 do
         echo -n "."
         echo "---------------------------------------------------------------------------" >> $RESULTS
-        echo -n "$gpu GPU(s):FP16=${FP16}:" >> $RESULTS
+        echo "$gpu GPU(s):FP16=${FP16}:" >> $RESULTS
         echo -n "Inception v3: " >> $RESULTS
         singularity exec --nv -B ${PWD}:/host_pwd --pwd /host_pwd $IMAGE python tf_cnn_benchmarks.py --num_gpus="${gpu}" --batch_size=32 --model=inception3 --use_fp16="${FP16}" --variable_update=parameter_server > $OUTPUT 2>&1
         cat $OUTPUT | grep -i "total images" >> $RESULTS

@@ -15,7 +15,7 @@ export TARGET=tensorflow-19.12-tf1-py3.sif
 #
 # ARC Specifics
 #
-module load /system/arcus/modules/singularity/3.5.3
+# module load /system/arcus/modules/singularity/3.5.3
 #
 # ----------------- END ---------------------------
 

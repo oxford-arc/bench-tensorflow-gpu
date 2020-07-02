@@ -20,6 +20,11 @@ export TARGET=tensorflow-19.12-tf1-py3.sif
 # ----------------- END ---------------------------
 
 mkdir image
-singularity pull image/$TARGET $DOCKERFILE
+cd image
+
+singularity pull --name $TARGET library://oxford-arc/default/tensorflow1912-test:sha256.a2a5daba42fdc5528d5a4262de7b13447d9a17bc529f16e053551cdc46797d86
+#
+# If the above download does not work use build from docker below:
+# singularity pull image/$TARGET $DOCKERFILE
 
 rm -rf $SINGULARITY_CACHEDIR $SINGULARITY_TMPDIR

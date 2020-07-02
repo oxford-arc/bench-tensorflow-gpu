@@ -26,6 +26,5 @@ sh runbench.sh
 
 ## Results
 
-Results can be found in the results.txt file (TBD)
+(TBD)
 
-```

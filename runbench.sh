@@ -2,8 +2,8 @@
 
 # ARC Specifics
 #
-module purge
-module load /system/arcus/modules/singularity/3.5.3
+#module purge
+#module load /system/arcus/modules/singularity/3.5.3
 #
 #------------------- END --------------------------
 
@@ -27,7 +27,7 @@ cd $BENCHDIR
 #
 echo "---------------------------------------------------------------------------"
 echo "TAG Inception v3: "
-singularity exec --nv -B ${PWD}:/host_pwd --pwd /host_pwd $IMAGE python tf_cnn_benchmarks.py --num_gpus=1 --batch_size=32 --model=inception3 --use_fp16=True--variable_update=parameter_server
+singularity exec --nv -B ${PWD}:/host_pwd --pwd /host_pwd $IMAGE python tf_cnn_benchmarks.py --num_gpus=1 --batch_size=32 --model=inception3 --use_fp16=True --variable_update=parameter_server
 echo "TAG VGG16: "
 singularity exec --nv -B ${PWD}:/host_pwd --pwd /host_pwd $IMAGE python tf_cnn_benchmarks.py --num_gpus=1 --batch_size=32 --model=vgg16 --use_fp16=True --variable_update=parameter_server
 echo "TAG ResNet50: "
